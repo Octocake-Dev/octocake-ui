@@ -1,6 +1,6 @@
-import buttons from "./buttons/Buttons";
-import box from "./box/box";
-import colors from "./colors/Colors";
+import buttons from "./button";
+import box from "./box";
+import colors from "./colors";
 
 const theme = { colors, buttons, box };
 

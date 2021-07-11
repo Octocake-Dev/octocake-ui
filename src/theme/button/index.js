@@ -1,6 +1,6 @@
-import colors from "../colors/Colors";
+import colors from "../colors";
 
-const Buttons = {
+const Button = {
   schemes: {
     primary: {
       border: "none",
@@ -36,4 +36,4 @@ const Buttons = {
   },
 };
 
-export default Buttons;
+export default Button;
