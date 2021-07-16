@@ -1,17 +1,17 @@
 import React from "react";
 
-import OctocakeProvider from "../../theme/OctocakeProvider";
+import OctocakeProvider from "@/theme/OctocakeProvider";
 
-import Button from "./Button";
+import ButtonComponent from "@/components/button/Button";
 
 export default {
   title: "Components/Button",
-  component: Button,
+  component: ButtonComponent,
 };
 
 const Template = (args) => (
   <OctocakeProvider>
-    <Button {...args} />
+    <ButtonComponent {...args} />
   </OctocakeProvider>
 );
 
