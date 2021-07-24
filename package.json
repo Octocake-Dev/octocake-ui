@@ -5,6 +5,7 @@
   "author": "octocake",
   "license": "MIT",
   "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "keywords": [
     "octocake",
     "octocake-ui"
