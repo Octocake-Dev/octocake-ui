@@ -21,19 +21,16 @@ export const Small = Template.bind({});
 Small.args = {
   children: "Button",
   size: "sm",
-  type: "button",
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   children: "Button",
   size: "md",
-  type: "button",
 };
 
 export const Large = Template.bind({});
 Large.args = {
   children: "Button",
   size: "lg",
-  type: "button",
 };
