@@ -1,8 +1,7 @@
 import React from "react";
 
-import OctocakeProvider from "@/theme/OctocakeProvider";
-
-import ButtonComponent from "@/components/button/Button";
+import OctocakeProvider from "../src/theme/OctocakeProvider";
+import ButtonComponent from "../src/components/button/Button";
 
 export default {
   title: "Components/Button",

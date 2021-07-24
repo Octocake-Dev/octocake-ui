@@ -1,8 +1,7 @@
 import React from "react";
 
-import OctocakeProvider from "../../theme/OctocakeProvider";
-
-import BoxComponent from "./Box";
+import OctocakeProvider from "../src/theme/OctocakeProvider";
+import BoxComponent from "../src/components/box/Box";
 
 export default {
   title: "Components/Box",

@@ -1,8 +1,7 @@
 import React from "react";
 
-import OctocakeProvider from "../../theme/OctocakeProvider";
-
-import TagComponent from "./Tag";
+import OctocakeProvider from "../src/theme/OctocakeProvider";
+import TagComponent from "../src/components/tag/Tag";
 
 export default {
   title: "Components/Tag",
