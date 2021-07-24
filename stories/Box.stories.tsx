@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Story } from "@storybook/react";
+
+import { BoxProps } from "../src/types/box";
 import OctocakeProvider from "../src/theme/OctocakeProvider";
 import BoxComponent from "../src/components/box/Box";
 
@@ -9,7 +12,7 @@ export default {
   argTypes: {},
 };
 
-const Template = (args) => (
+const Template: Story<BoxProps> = (args) => (
   <OctocakeProvider>
     <BoxComponent {...args} />
   </OctocakeProvider>

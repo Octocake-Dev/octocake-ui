@@ -8,7 +8,7 @@ export const StyledButton = styled("button")(
 
     //
     fontSize: "16px",
-    fontWeight: "600",
+    fontWeight: 600,
     borderRadius: "10px",
     //
   },
