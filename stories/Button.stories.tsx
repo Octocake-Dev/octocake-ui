@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Story } from "@storybook/react";
+
+import { ButtonProps } from "../src/types/button";
 import OctocakeProvider from "../src/theme/OctocakeProvider";
 import ButtonComponent from "../src/components/button/Button";
 
@@ -8,7 +11,7 @@ export default {
   component: ButtonComponent,
 };
 
-const Template = (args) => (
+const Template: Story<ButtonProps> = (args) => (
   <OctocakeProvider>
     <ButtonComponent {...args} />
   </OctocakeProvider>
@@ -24,6 +27,7 @@ Small.args = {
 export const Medium = Template.bind({});
 Medium.args = {
   children: "Button",
+  size: "md",
   type: "button",
 };
 

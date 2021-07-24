@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Story } from "@storybook/react";
+
+import { TagProps } from "../src/types/tag";
 import OctocakeProvider from "../src/theme/OctocakeProvider";
 import TagComponent from "../src/components/tag/Tag";
 
@@ -9,7 +12,7 @@ export default {
   argTypes: {},
 };
 
-const Template = (args) => (
+const Template: Story<TagProps> = (args) => (
   <OctocakeProvider>
     <TagComponent {...args} />
   </OctocakeProvider>
