@@ -3,9 +3,10 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { babel } from "@rollup/plugin-babel";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import commonjs from "@rollup/plugin-commonjs";
+import typescript from "rollup-plugin-typescript2";
 
 export default {
-  input: "src/index.js",
+  input: "src/index.ts",
   output: [
     {
       file: "dist/index.js",
@@ -27,5 +28,11 @@ export default {
     peerDepsExternal(),
     nodeResolve(),
     terser(),
+    typescript({
+      useTsconfigDeclarationDir: true,
+      tsconfigOverride: {
+        exclude: ["**/*.stories.*"],
+      },
+    }),
   ],
 };
