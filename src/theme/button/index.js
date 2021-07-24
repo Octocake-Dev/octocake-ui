@@ -5,14 +5,14 @@ const Button = {
     primary: {
       border: "none",
       color: "white",
-      backgroundColor: colors.primary[500],
+      backgroundColor: colors.primary[400],
 
       ":hover": {
-        backgroundColor: colors.primary[600],
+        backgroundColor: colors.primary[500],
       },
       ":focus": {
-        backgroundColor: colors.primary[700],
-        boxShadow: `0px 0px 0px 4px rgba(36,130,119,0.4)`,
+        backgroundColor: colors.primary[600],
+        boxShadow: `0px 0px 0px 4px rgba(53,143,128,0.4)`,
       },
     },
 
@@ -27,11 +27,11 @@ const Button = {
     },
 
     md: {
-      padding: "12px 25px",
+      padding: "12px 22px",
     },
 
     lg: {
-      padding: "14px 30px",
+      padding: "14px 24px",
     },
   },
 };
