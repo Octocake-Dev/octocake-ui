@@ -1,6 +1,5 @@
-import buttons from "./button";
 import colors from "./colors";
 
-const theme = { colors, buttons };
+const theme = { colors };
 
 export default theme;
