@@ -1,7 +1,7 @@
 import colors from "../colors";
 
 const Button = {
-  schemes: {
+  variants: {
     primary: {
       border: "none",
       color: "white",

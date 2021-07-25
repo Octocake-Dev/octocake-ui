@@ -15,7 +15,7 @@ export const StyledButton = styled("button")<ButtonProps>(
     //
   },
 
-  variant({ prop: "scheme", scale: "buttons.schemes" }),
+  variant({ prop: "variant", scale: "buttons.variants" }),
   variant({ prop: "size", scale: "buttons.sizes" }),
 
   buttonStyle
