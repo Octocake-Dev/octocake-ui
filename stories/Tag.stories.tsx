@@ -18,7 +18,20 @@ const Template: Story<TagProps> = (args) => (
   </OctocakeProvider>
 );
 
-export const Tag = Template.bind({});
-Tag.args = {
+export const Small = Template.bind({});
+Small.args = {
   children: "Tag",
+  size: "sm",
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  children: "Tag",
+  size: "md",
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  children: "Tag",
+  size: "lg",
 };
