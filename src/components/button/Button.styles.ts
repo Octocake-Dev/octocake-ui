@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { variant, buttonStyle } from "styled-system";
 
-import { ButtonProps } from "@/types/button";
+import { ButtonProps } from "../../types/button";
 
 export const StyledButton = styled("button")<ButtonProps>(
   {
