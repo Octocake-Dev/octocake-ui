@@ -1,3 +1,3 @@
-export type TagProps = {
+export interface TagProps {
   children: React.ReactNode;
-};
+}

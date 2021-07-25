@@ -2,12 +2,24 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/theme/*": ["src/theme/*"]
+      "@/types/*": ["src/types/*"],
+      "@/theme/*": ["src/theme/*"],
+      "@/components/*": ["src/components/*"]
     },
     "rootDir": "./src",
     "target": "es5",
-    "lib": ["es6", "dom", "esnext"],
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "declarationMap": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,

@@ -1,4 +1,6 @@
 import { variant } from "styled-system";
 import styled from "styled-components";
 
-export const StyledBox = styled("div")({}, variant({}));
+import { BoxProps } from "@/types/box";
+
+export const StyledBox = styled("div")<BoxProps>({}, variant({}));

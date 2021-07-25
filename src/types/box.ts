@@ -1,3 +1,3 @@
-export type BoxProps = {
+export interface BoxProps {
   children: React.ReactNode;
-};
+}

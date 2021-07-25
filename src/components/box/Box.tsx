@@ -1,7 +1,7 @@
 import React from "react";
 
 import { StyledBox } from "./Box.styles";
-import { BoxProps } from "src/types/box";
+import { BoxProps } from "@/types/box";
 
 const Box = ({ children, ...props }: BoxProps) => (
   <StyledBox {...props}>{children}</StyledBox>

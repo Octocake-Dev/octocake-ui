@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { variant, buttonStyle } from "styled-system";
 
-export const StyledButton = styled("button")(
+import { ButtonProps } from "@/types/button";
+
+export const StyledButton = styled("button")<ButtonProps>(
   {
     cursor: "pointer",
     transition: "250ms ease-in-out",

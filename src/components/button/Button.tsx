@@ -1,7 +1,7 @@
 import React from "react";
 
 import { StyledButton } from "./Button.styles";
-import { ButtonProps } from "src/types/button";
+import { ButtonProps } from "@/types/button";
 
 // TODO: replace scheme => variant
 const Button = (props: ButtonProps) => {
