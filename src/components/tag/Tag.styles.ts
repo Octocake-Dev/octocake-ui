@@ -30,13 +30,13 @@ export const StyledTag = styled("span")<TagProps>(
     prop: "size",
     variants: {
       sm: {
-        padding: "0.3rem 0.8rem",
+        padding: "0.2rem 0.8rem",
       },
       md: {
-        padding: "0.4rem 1rem",
+        padding: "0.3rem 1rem",
       },
       lg: {
-        padding: "0.5rem 1.2rem",
+        padding: "0.4rem 1.2rem",
       },
     },
   })
