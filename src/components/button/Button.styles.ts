@@ -8,12 +8,8 @@ export const StyledButton = styled("button")<ButtonProps>(
     cursor: "pointer",
     transition: "250ms ease-in-out",
     fontFamily: "inherit",
-
-    //
-    fontSize: "16px",
     fontWeight: 600,
     borderRadius: "10px",
-    //
   },
 
   (props) =>
@@ -44,14 +40,17 @@ export const StyledButton = styled("button")<ButtonProps>(
     prop: "size",
     variants: {
       sm: {
+        fontSize: "14px",
         padding: "10px 20px",
       },
 
       md: {
+        fontSize: "16px",
         padding: "12px 22px",
       },
 
       lg: {
+        fontSize: "18px",
         padding: "14px 24px",
       },
     },
