@@ -12,26 +12,34 @@ export default {
   argTypes: {},
 };
 
-const Template: Story<TagProps> = (args) => (
+const Template: Story<TagProps> = ({ tags, ...args }: any) => (
   <OctocakeProvider>
-    <TagComponent {...args} />
+    {tags.map((tag: TagProps) => (
+      <TagComponent {...tag} />
+    ))}
   </OctocakeProvider>
 );
 
 export const Small = Template.bind({});
 Small.args = {
-  children: "Tag",
-  size: "sm",
+  tags: [
+    { children: "Tag", size: "sm", variant: "outline" },
+    { children: "Tag", size: "sm", variant: "solid" },
+  ],
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
-  children: "Tag",
-  size: "md",
+  tags: [
+    { children: "Tag", size: "md", variant: "outline" },
+    { children: "Tag", size: "md", variant: "solid" },
+  ],
 };
 
 export const Large = Template.bind({});
 Large.args = {
-  children: "Tag",
-  size: "lg",
+  tags: [
+    { children: "Tag", size: "lg", variant: "outline" },
+    { children: "Tag", size: "lg", variant: "solid" },
+  ],
 };

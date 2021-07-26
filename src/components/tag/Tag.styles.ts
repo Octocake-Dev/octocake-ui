@@ -19,8 +19,16 @@ export const StyledTag = styled("span")<TagProps>(
       prop: "colorScheme",
       variants: {
         primary: {
-          backgroundColor: props.theme.colors.primary[100],
-          color: props.theme.colors.primary[900],
+          backgroundColor:
+            props.variant === "solid"
+              ? props.theme.colors.primary[500]
+              : props.theme.colors.primary[100],
+
+          color:
+            props.variant === "solid"
+              ? "white"
+              : props.theme.colors.primary[900],
+
           border: `1px solid ${props.theme.colors.primary[500]}`,
         },
       },

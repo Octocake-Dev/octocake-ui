@@ -4,10 +4,20 @@ import { StyledTag } from "./Tag.styles";
 import { TagProps } from "../../types/tag";
 
 const Tag = (props: TagProps) => {
-  const { children, size = "md", colorScheme = "primary" } = props;
+  const {
+    children,
+    variant = "outline",
+    size = "md",
+    colorScheme = "primary",
+  } = props;
 
   return (
-    <StyledTag size={size} colorScheme={colorScheme} {...props}>
+    <StyledTag
+      variant={variant}
+      size={size}
+      colorScheme={colorScheme}
+      {...props}
+    >
       {children}
     </StyledTag>
   );
