@@ -7,6 +7,7 @@ export const StyledButton = styled("button")<ButtonProps>(
   {
     cursor: "pointer",
     transition: "250ms ease-in-out",
+    fontFamily: "inherit",
 
     //
     fontSize: "16px",
