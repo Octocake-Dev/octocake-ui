@@ -1,5 +1,13 @@
 import styled from "styled-components";
-import { variant, buttonStyle } from "styled-system";
+import {
+  variant,
+  compose,
+  space,
+  typography,
+  layout,
+  position,
+  buttonStyle,
+} from "styled-system";
 
 import { ButtonProps } from "../../types/button";
 
@@ -56,5 +64,5 @@ export const StyledButton = styled("button")<ButtonProps>(
     },
   }),
 
-  buttonStyle
+  compose(buttonStyle, space, typography, layout, position)
 );

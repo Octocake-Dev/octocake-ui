@@ -9,6 +9,7 @@ const Tag = (props: TagProps) => {
     variant = "outline",
     size = "md",
     colorScheme = "primary",
+    ...rest
   } = props;
 
   return (
@@ -16,7 +17,7 @@ const Tag = (props: TagProps) => {
       variant={variant}
       size={size}
       colorScheme={colorScheme}
-      {...props}
+      {...rest}
     >
       {children}
     </StyledTag>
