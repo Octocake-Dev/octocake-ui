@@ -13,7 +13,8 @@ export type SystemProps = ButtonStyleProps &
   PositionProps;
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    SystemProps {
   children: React.ReactNode;
   size?: "sm" | "md" | "lg";
   variant?: "primary" | "secondary" | "ghost";

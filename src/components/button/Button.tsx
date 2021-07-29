@@ -1,9 +1,9 @@
 import React from "react";
 
 import { StyledButton } from "./Button.styles";
-import { ButtonProps, SystemProps } from "../../types/button";
+import { ButtonProps } from "../../types/button";
 
-const Button = (props: ButtonProps & SystemProps) => {
+const Button = (props: ButtonProps) => {
   const { children, size = "md", variant = "primary", ...rest } = props;
 
   return (

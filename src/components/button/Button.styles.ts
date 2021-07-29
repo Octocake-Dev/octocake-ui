@@ -9,9 +9,9 @@ import {
   buttonStyle,
 } from "styled-system";
 
-import { ButtonProps, SystemProps } from "../../types/button";
+import { ButtonProps } from "../../types/button";
 
-export const StyledButton = styled("button")<ButtonProps & SystemProps>(
+export const StyledButton = styled("button")<ButtonProps>(
   {
     cursor: "pointer",
     transition: "250ms ease-in-out",
