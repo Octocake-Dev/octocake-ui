@@ -14,22 +14,17 @@ export const StyledTag = styled("span")<TagProps>(
     fontWeight: 500,
   },
 
-  (props) =>
+  ({ theme: { colors }, variant: Variant }) =>
     variant({
       prop: "colorScheme",
       variants: {
         primary: {
           backgroundColor:
-            props.variant === "solid"
-              ? props.theme.colors.primary[500]
-              : props.theme.colors.primary[100],
+            Variant === "solid" ? colors.primary[500] : colors.primary[100],
 
-          color:
-            props.variant === "solid"
-              ? "white"
-              : props.theme.colors.primary[900],
+          color: Variant === "solid" ? "white" : colors.primary[900],
 
-          border: `1px solid ${props.theme.colors.primary[500]}`,
+          border: `1px solid ${colors.primary[500]}`,
         },
       },
     }),
