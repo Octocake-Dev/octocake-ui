@@ -4,15 +4,9 @@ import { StyledInput } from "./Input.styles";
 import { InputProps } from "../../types/input";
 
 const Input = (props: InputProps) => {
-  const { variant = "primary", error, ...rest } = props;
+  const { variant = "primary", ...rest } = props;
 
-  return (
-    <StyledInput
-      placeholder="Enter email address"
-      variant={variant}
-      {...rest}
-    />
-  );
+  return <StyledInput variant={variant} {...rest} />;
 };
 
 export default Input;

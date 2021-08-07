@@ -17,5 +17,8 @@ const Template: Story<InputProps> = (args) => (
   </OctocakeProvider>
 );
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Default = Template.bind({});
+Default.args = { placeholder: "Enter email address" };
+
+export const Error = Template.bind({});
+Error.args = { placeholder: "Enter email address", error: true };
