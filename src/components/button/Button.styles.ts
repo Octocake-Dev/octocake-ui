@@ -20,20 +20,20 @@ export const StyledButton = styled("button")<ButtonProps>(
     borderRadius: "10px",
   },
 
-  (props) =>
+  ({ theme: { colors } }) =>
     variant({
       prop: "variant",
       variants: {
         primary: {
           border: "none",
           color: "white",
-          backgroundColor: props.theme.colors.primary[400],
+          backgroundColor: colors.primary[400],
 
           ":hover": {
-            backgroundColor: props.theme.colors.primary[500],
+            backgroundColor: colors.primary[500],
           },
           ":focus": {
-            backgroundColor: props.theme.colors.primary[600],
+            backgroundColor: colors.primary[600],
             boxShadow: `0px 0px 0px 4px rgba(53,143,128,0.4)`,
           },
         },
