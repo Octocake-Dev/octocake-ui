@@ -21,11 +21,13 @@ export const StyledInput = styled("input")<InputProps>(
       prop: "variant",
       variants: {
         primary: {
-          border: error ? "2px solid red" : `2px solid ${colors.primary[200]}`,
+          border: `2px solid ${error ? "#FCA5A5" : colors.primary[200]}`,
 
           ":focus": {
-            border: `2px solid ${colors.primary[400]}`,
-            boxShadow: "0px 5px 5px 0px rgba(70,157,137,0.15)",
+            border: `2px solid ${error ? "#EF4444" : colors.primary[400]}`,
+            boxShadow: `0px 5px 5px 0px ${
+              error ? "rgb(239,68,68,0.15)" : "rgba(70,157,137,0.15)"
+            }`,
           },
         },
       },
