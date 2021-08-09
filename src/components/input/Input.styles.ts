@@ -14,6 +14,10 @@ export const StyledInput = styled("input")<InputProps>(
     ":focus": {
       outline: "none",
     },
+    ":disabled": {
+      opacity: "65%",
+      cursor: "not-allowed",
+    },
   },
 
   ({ theme: { colors }, error }) =>

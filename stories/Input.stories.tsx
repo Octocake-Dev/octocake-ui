@@ -20,5 +20,8 @@ const Template: Story<InputProps> = (args) => (
 export const Default = Template.bind({});
 Default.args = { placeholder: "Enter email address" };
 
+export const Disabled = Template.bind({});
+Disabled.args = { placeholder: "Enter email address", disabled: true };
+
 export const Error = Template.bind({});
 Error.args = { placeholder: "Enter email address", error: true };
